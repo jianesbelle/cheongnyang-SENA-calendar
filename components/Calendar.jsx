@@ -104,7 +104,7 @@ const PRESET = [
   { id:130, date:"2026-07-21", title:"여름방학식",             category:"업무",  period:"", className:"", room:"", subOption:"기타",       subOptionEtc:"방학식", startTime:"09:00", endTime:"12:00" },
 ];
 
-const EMPTY_FORM = { title:"", category:"수업", period:"1교시", className:"1-1반", room:"음악실", subOption:"", subOptionEtc:"", startTime:"09:00", endTime:"09:45" };
+const EMPTY_FORM = { title:"", category:"수업", period:"1교시", className:"", room:"음악실", subOption:"", subOptionEtc:"", startTime:"09:00", endTime:"09:45" };
 
 function Pills({ options, value, onChange }) {
   return (
@@ -361,7 +361,7 @@ export default function Calendar() {
     setModal(null);
   };
   const handleDelete = () => {
-    const newEvents = events.filter(e => e.id !== modal.event.id);
+    const newEvents = events.filter(e => String(e.id) !== String(modal.event.id));
     setEvents(newEvents);
     saveAll(newEvents);
     setModal(null);
