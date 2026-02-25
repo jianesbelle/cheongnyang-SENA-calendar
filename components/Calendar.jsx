@@ -205,13 +205,23 @@ function EventForm({ form, setForm, onSave, onCancel, mode, selDate, roomRanges 
     </>}
     {form.category==="업무"  && subs && <div style={{marginBottom:13}}><div className="fl">📋 업무 유형</div><Pills options={subs} value={form.subOption} onChange={v=>setForm(f=>({...f,subOption:v,subOptionEtc:""}))} />{form.subOption==="기타"&&<input className="fi" style={{marginTop:8}} placeholder="직접 입력" value={form.subOptionEtc} onChange={e=>setForm(f=>({...f,subOptionEtc:e.target.value}))}/>}</div>}
     {form.category==="창체"  && subs && <div style={{marginBottom:13}}><div className="fl">🌱 창체 유형</div><Pills options={subs} value={form.subOption} onChange={v=>setForm(f=>({...f,subOption:v}))} /></div>}
+    {(form.category==="창체" || form.category==="방과후") && (
+      <div style={{marginBottom:13}}>
+        <div className="fl">🕐 교시</div>
+        <select className="fi fs" value={form.period} onChange={e => handlePeriod(e.target.value)}>
+          {SCHOOL_SCHEDULE.map(s => <option key={s.period} value={s.period}>{s.period}{s.start?` (${s.start}~${s.end})`:""}</option>)}
+        </select>
+      </div>
+    )}
     {form.category==="회의"  && subs && <div style={{marginBottom:13}}><div className="fl">🗣 회의 유형</div><Pills options={subs} value={form.subOption} onChange={v=>setForm(f=>({...f,subOption:v,subOptionEtc:""}))} />{form.subOption==="기타"&&<input className="fi" style={{marginTop:8}} placeholder="직접 입력" value={form.subOptionEtc} onChange={e=>setForm(f=>({...f,subOptionEtc:e.target.value}))}/>}</div>}
     {form.category==="전학공"&& subs && <div style={{marginBottom:13}}><div className="fl">🔬 전학공 유형</div><Pills options={subs} value={form.subOption} onChange={v=>setForm(f=>({...f,subOption:v}))} /></div>}
     <div className="dv"/>
-    <div style={{ marginBottom:16, display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
-      <div><div className="fl">시작</div><input className="fi" type="time" value={form.startTime} onChange={e=>setForm(f=>({...f,startTime:e.target.value}))}/></div>
-      <div><div className="fl">종료</div><input className="fi" type="time" value={form.endTime}   onChange={e=>setForm(f=>({...f,endTime:e.target.value}))}/></div>
-    </div>
+    {form.category !== "휴업" && (
+      <div style={{ marginBottom:16, display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
+        <div><div className="fl">시작</div><input className="fi" type="time" value={form.startTime} onChange={e=>setForm(f=>({...f,startTime:e.target.value}))}/></div>
+        <div><div className="fl">종료</div><input className="fi" type="time" value={form.endTime}   onChange={e=>setForm(f=>({...f,endTime:e.target.value}))}/></div>
+      </div>
+    )}
     {form.title && <div style={{ background:"#F5F2EA", borderRadius:8, padding:"9px 12px", marginBottom:14, fontSize:11, color:"#888", fontFamily:"monospace", lineHeight:1.7, wordBreak:"break-all" }}>
       🔗 {toObsidian({...form, date:selDate})}
     </div>}
