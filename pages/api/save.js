@@ -1,4 +1,4 @@
-const GAS_URL = "https://script.google.com/macros/s/AKfycbwTQePcg4Omr8SO7r17nLQ7rMwAQw7sTJXFVSu-6vEPrd4s5vCn5cyB2PipBAlTSteW/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbyN1yBVhLL_N7IveKI-uNGbYcaUesizTViF6Jt4TJIS-Mx6MxbhxTDiK_PJLiB4O1E/exec";
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
   try {
