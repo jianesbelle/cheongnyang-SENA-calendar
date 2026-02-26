@@ -1,4 +1,4 @@
-const GAS_URL = "https://script.google.com/macros/s/AKfycbwsBls7PiMPAwqNHufGBOqS6GbyxGJaYqetA88Y0CAxPh1cHOjK4oP_I_eEPjOyAxQt/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbyN1yBVhLL_N7IveKI-uNGbYcaUesizTViF6Jt4TJIS-Mx6MxbhxTDiK_PJLiB4O1E/exec";
 export default async function handler(req, res) {
   try {
     const response = await fetch(GAS_URL);
