@@ -540,7 +540,19 @@ export default function Calendar() {
   const saveAll = async (newE=events,newT=todos,newM=memos,newR=roomRanges,newB=banners,newCC=customCats,newD=docs,newTT=timetable,newTT2=timetable2,newSN=studentNotes,newFE=familyEvents,newFCC=familyCustomCats)=>{
     setSyncStatus("syncing");
     try {
-      await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({events:newE,todos:newT,memos:newM,roomRanges:newR,banners:newB,customCats:newCC,docs:newD,timetable:newTT,timetable2:newTT2,studentNotes:newSN,familyEvents:newFE,familyCustomCats:newFCC})});
+      // Split into meta (everything except events) + events to avoid payload size issues
+      const meta = {todos:newT,memos:newM,roomRanges:newR,banners:newB,customCats:newCC,docs:newD,timetable:newTT,timetable2:newTT2,studentNotes:newSN,familyEvents:newFE,familyCustomCats:newFCC};
+      // Save events in chunks of 80 to avoid GAS payload limits
+      const CHUNK = 80;
+      if(newE.length > CHUNK) {
+        for(let i=0; i<newE.length; i+=CHUNK) {
+          const isLast = i+CHUNK >= newE.length;
+          await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({events:newE.slice(i,i+CHUNK), _evChunk:true, _evStart:i, _evTotal:newE.length, ...(isLast?meta:{})})});
+        }
+      } else {
+        await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({events:newE,...meta})});
+      }
       setSyncStatus("ok");
       setLastSynced(new Date().toLocaleTimeString("ko-KR"));
     } catch { setSyncStatus("error"); }
@@ -618,7 +630,8 @@ export default function Calendar() {
         *{box-sizing:border-box;}
         .bp{background:#3D3530;color:#FDFCF8;border:none;border-radius:8px;padding:8px 20px;cursor:pointer;font-size:14px;font-family:inherit;font-weight:700;}
         .bg{background:transparent;border:1.5px solid #ccc;border-radius:8px;padding:7px 16px;cursor:pointer;font-size:13px;font-family:inherit;color:#555;}
-        .dc{height:130px;padding:6px 5px 4px;border:1px solid #EAE6DE;cursor:pointer;overflow:hidden;}
+        .dc{height:130px;padding:6px 5px 4px;border:1px solid #EAE6DE;cursor:pointer;overflow-y:auto;overflow-x:hidden;}
+        .dc::-webkit-scrollbar{width:3px;}.dc::-webkit-scrollbar-thumb{background:#DDD8CE;border-radius:3px;}
         .dc:hover{background:#F5F2EA !important;}
         .week-row{display:grid;grid-template-columns:repeat(7,1fr) 34px;grid-auto-rows:130px;}
         .ec{border-radius:4px;padding:2px 5px;font-size:10.5px;margin-top:2px;cursor:pointer;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;border-left:3px solid;line-height:1.4;}
@@ -1004,9 +1017,14 @@ export default function Calendar() {
           }
           const merged = [...events, ...newEvs];
           setEvents(merged);
-          saveAll(merged);
-          setBulkMsg(`✅ ${newEvs.length}개 수업이 달력에 등록됐어요!`);
-          setTimeout(()=>setBulkMsg(""), 4000);
+          setBulkMsg("💾 저장 중...");
+          try {
+            await saveAll(merged);
+            setBulkMsg(`✅ ${newEvs.length}개 수업이 달력에 등록됐어요!`);
+          } catch(e) {
+            setBulkMsg("⚠️ 저장 실패 - 다시 시도해 주세요");
+          }
+          setTimeout(()=>setBulkMsg(""), 5000);
         };
 
         const bulkDelete = () => {
