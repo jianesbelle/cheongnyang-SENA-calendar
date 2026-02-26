@@ -540,19 +540,8 @@ export default function Calendar() {
   const saveAll = async (newE=events,newT=todos,newM=memos,newR=roomRanges,newB=banners,newCC=customCats,newD=docs,newTT=timetable,newTT2=timetable2,newSN=studentNotes,newFE=familyEvents,newFCC=familyCustomCats)=>{
     setSyncStatus("syncing");
     try {
-      // Split into meta (everything except events) + events to avoid payload size issues
       const meta = {todos:newT,memos:newM,roomRanges:newR,banners:newB,customCats:newCC,docs:newD,timetable:newTT,timetable2:newTT2,studentNotes:newSN,familyEvents:newFE,familyCustomCats:newFCC};
-      // Save events in chunks of 80 to avoid GAS payload limits
-      const CHUNK = 80;
-      if(newE.length > CHUNK) {
-        for(let i=0; i<newE.length; i+=CHUNK) {
-          const isLast = i+CHUNK >= newE.length;
-          await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},
-            body:JSON.stringify({events:newE.slice(i,i+CHUNK), _evChunk:true, _evStart:i, _evTotal:newE.length, ...(isLast?meta:{})})});
-        }
-      } else {
-        await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({events:newE,...meta})});
-      }
+      await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({events:newE,...meta})});
       setSyncStatus("ok");
       setLastSynced(new Date().toLocaleTimeString("ko-KR"));
     } catch { setSyncStatus("error"); }
