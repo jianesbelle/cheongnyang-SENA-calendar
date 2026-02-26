@@ -1,4 +1,4 @@
-const GAS_URL = "https://script.google.com/macros/s/AKfycbyN1yBVhLL_N7IveKI-uNGbYcaUesizTViF6Jt4TJIS-Mx6MxbhxTDiK_PJLiB4O1E/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbx1o42knOmWJcgwQluC7hUs0ZweQ122FpjSdMCUQqw2BPYH-6IXCPxAkECt0MAlF00_/exec";
 
 export const config = { api: { bodyParser: { sizeLimit: "4mb" } } };
 
