@@ -640,6 +640,7 @@ export default function Calendar() {
       `}</style>
 
       <div style={{background:"#3D3530",color:"#FDFCF8",padding:"13px 16px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+        <div style={{display:"flex",alignItems:"flex-start",justifyContent:"space-between",width:"100%"}}>
         <div>
           <div style={{fontSize:11,opacity:0.5,letterSpacing:"0.12em",marginBottom:1}}>청량중학교 2026</div>
           <div style={{fontSize:17,fontWeight:700}}>📅 업무 플래너 · 김세나 선생님</div>
