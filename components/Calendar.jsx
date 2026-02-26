@@ -337,16 +337,35 @@ const CLASS_INFO = {
   "1-10반": { homeroom:"김혜현", location:"본3층" },
 };
 const STUDENTS = {
-  "1-1반":  [{no:1,name:"권하윤"},{no:2,name:"김라희"},{no:3,name:"김수현"},{no:4,name:"김시연"},{no:5,name:"김연서"},{no:6,name:"박가현"},{no:7,name:"박소율"},{no:8,name:"성서윤"},{no:9,name:"이서연"},{no:10,name:"이윤슬"},{no:11,name:"정지희"},{no:12,name:"채린"},{no:13,name:"최담희"},{no:14,name:"최지수"},{no:15,name:"가합(AL AZZAWI)"},{no:16,name:"곽주언"},{no:17,name:"김시율"},{no:18,name:"김재하"},{no:19,name:"김지성"},{no:20,name:"박로이"},{no:21,name:"박승현"},{no:22,name:"유건희"},{no:23,name:"이도율"},{no:24,name:"이창민"},{no:25,name:"이현도"},{no:26,name:"전윤형"},{no:27,name:"정우진"},{no:28,name:"하서우"},{no:29,name:"함현태"}],
+  "1-1반":  [{no:1,name:"권하윤"},{no:2,name:"김라희"},{no:3,name:"김수현"},{no:4,name:"김시연"},{no:5,name:"김연서"},{no:6,name:"박가현"},{no:7,name:"박소율"},{no:8,name:"성서윤"},{no:9,name:"이서연"},{no:10,name:"이윤슬"},{no:11,name:"정지희"},{no:12,name:"채린"},{no:13,name:"최담희"},{no:14,name:"최지수"},{no:15,name:"가합(AL AZZAWI)"},{no:16,name:"강다니엘"},{no:17,name:"곽주언"},{no:18,name:"김시율"},{no:19,name:"김재하"},{no:20,name:"김지성"},{no:21,name:"박로이"},{no:22,name:"박승현"},{no:23,name:"유건희"},{no:24,name:"이도율"},{no:25,name:"이창민"},{no:26,name:"이현도"},{no:27,name:"전윤형"},{no:28,name:"정우진"},{no:29,name:"하서우"},{no:30,name:"함현태"}],
   "1-2반":  [{no:1,name:"알리사(BOGATYREVA)"},{no:2,name:"김예림"},{no:3,name:"김이령"},{no:4,name:"박서윤"},{no:5,name:"박유빈"},{no:6,name:"박윤희"},{no:7,name:"방재윤"},{no:8,name:"손유하"},{no:9,name:"신도은"},{no:10,name:"오예음"},{no:11,name:"유지혜"},{no:12,name:"윤혜린"},{no:13,name:"이든"},{no:14,name:"이해은"},{no:15,name:"홍지수"},{no:16,name:"김강민"},{no:17,name:"김예찬"},{no:18,name:"김정운"},{no:19,name:"김지훈"},{no:20,name:"김하랑"},{no:21,name:"사준우"},{no:22,name:"송도윤"},{no:23,name:"심재민"},{no:24,name:"이승우"},{no:25,name:"임건우"},{no:26,name:"전승오"},{no:27,name:"전지후"},{no:28,name:"정용화"},{no:29,name:"최은호"},{no:30,name:"하늘빛"}],
   "1-3반":  [{no:1,name:"강채하"},{no:2,name:"권하윤"},{no:3,name:"김규리"},{no:4,name:"김예빈"},{no:5,name:"박서빈"},{no:6,name:"왕세빈"},{no:7,name:"유서연"},{no:8,name:"유송현"},{no:9,name:"이소이"},{no:10,name:"이지유"},{no:11,name:"정소윤"},{no:12,name:"정혜원"},{no:13,name:"조하연"},{no:14,name:"한채린"},{no:15,name:"황은성"},{no:16,name:"김대한"},{no:17,name:"김도현"},{no:18,name:"김재희"},{no:19,name:"박준영"},{no:20,name:"박태후"},{no:21,name:"성민우"},{no:22,name:"신은찬"},{no:23,name:"윤시유"},{no:24,name:"윤지성"},{no:25,name:"이예담"},{no:26,name:"이정빈"},{no:27,name:"임재윤"},{no:28,name:"임준혁"},{no:29,name:"정주원"},{no:30,name:"최태앙"}],
-  "1-4반":  [{no:1,name:"발레리아(AN VALERIYA)"},{no:2,name:"길다연"},{no:3,name:"김나율"},{no:4,name:"김보윤"},{no:5,name:"김채린"},{no:6,name:"박윤아"},{no:7,name:"박희현"},{no:8,name:"서지우"},{no:9,name:"송유민"},{no:10,name:"오나경"},{no:11,name:"유은서"},{no:12,name:"장호정"},{no:13,name:"정봄"},{no:14,name:"차인서"},{no:15,name:"강다니엘"},{no:16,name:"공민규"},{no:17,name:"김도윤"},{no:18,name:"김서준"},{no:19,name:"김서하"},{no:20,name:"김윤건"},{no:21,name:"김현중"},{no:22,name:"박상우"},{no:23,name:"박지호"},{no:24,name:"서효준"},{no:25,name:"안덕호"},{no:26,name:"안서진"},{no:27,name:"이준희"},{no:28,name:"정주원"},{no:29,name:"진연준"},{no:30,name:"허시형"}],
+  "1-4반":  [{no:1,name:"발레리아(AN VALERIYA)"},{no:2,name:"길다연"},{no:3,name:"김나율"},{no:4,name:"김보윤"},{no:5,name:"김채린"},{no:6,name:"박윤아"},{no:7,name:"박희현"},{no:8,name:"서지우"},{no:9,name:"송유민"},{no:10,name:"오나경"},{no:11,name:"유은서"},{no:12,name:"장호정"},{no:13,name:"정봄"},{no:14,name:"차인서"},{no:15,name:"공민규"},{no:16,name:"김도윤"},{no:17,name:"김서준"},{no:18,name:"김서하"},{no:19,name:"김윤건"},{no:20,name:"김현중"},{no:21,name:"박상우"},{no:22,name:"박지호"},{no:23,name:"서효준"},{no:24,name:"안덕호"},{no:25,name:"안서진"},{no:26,name:"이준희"},{no:27,name:"정주원"},{no:28,name:"진연준"},{no:29,name:"허시형"}],
   "1-5반":  [{no:1,name:"김도이"},{no:2,name:"김민채"},{no:3,name:"김보민"},{no:4,name:"김소윤"},{no:5,name:"김재인"},{no:6,name:"김하영"},{no:7,name:"문서영"},{no:8,name:"문지현"},{no:9,name:"박가을"},{no:10,name:"박지원"},{no:11,name:"송주하"},{no:12,name:"염주원"},{no:13,name:"이지유"},{no:14,name:"임수아"},{no:15,name:"전민지"},{no:16,name:"예브게니(KIM YEVGENIY)"},{no:17,name:"김강"},{no:18,name:"김건"},{no:19,name:"김서진"},{no:20,name:"김재겸"},{no:21,name:"석강후"},{no:22,name:"석현준"},{no:23,name:"양태양"},{no:24,name:"이경환"},{no:25,name:"이민형"},{no:26,name:"이승훈"},{no:27,name:"이시율"},{no:28,name:"이영빈"},{no:29,name:"이윤후"},{no:30,name:"임주성"}],
   "1-6반":  [{no:1,name:"미라슬라바(KIM MIRASLAVA)"},{no:2,name:"김가현"},{no:3,name:"김승은"},{no:4,name:"김연서"},{no:5,name:"김지우"},{no:6,name:"백화연"},{no:7,name:"서다혜"},{no:8,name:"안서현"},{no:9,name:"안혜준"},{no:10,name:"전유정"},{no:11,name:"정근하"},{no:12,name:"정민경"},{no:13,name:"조한나"},{no:14,name:"최세아"},{no:15,name:"김도율"},{no:16,name:"김주원"},{no:17,name:"김태양"},{no:18,name:"노유원"},{no:19,name:"류찬희"},{no:20,name:"성민기"},{no:21,name:"송진후"},{no:22,name:"안수호"},{no:23,name:"윤유섭"},{no:24,name:"이도훈"},{no:25,name:"이선재"},{no:26,name:"이승범"},{no:27,name:"주하빈"},{no:28,name:"차민혁"},{no:29,name:"최민우"},{no:30,name:"강지형"}],
   "1-7반":  [{no:1,name:"김베라(KIM VERA)"},{no:2,name:"김사랑"},{no:3,name:"김시연"},{no:4,name:"김채아"},{no:5,name:"박규리"},{no:6,name:"박서윤"},{no:7,name:"신다희"},{no:8,name:"이수현"},{no:9,name:"장제이"},{no:10,name:"정예현"},{no:11,name:"조수인"},{no:12,name:"조아율"},{no:13,name:"최서연"},{no:14,name:"최진영"},{no:15,name:"허정원"},{no:16,name:"발레라(TKHAY VALERIY)"},{no:17,name:"김도연"},{no:18,name:"김도혁"},{no:19,name:"김범수"},{no:20,name:"김세진"},{no:21,name:"김이든"},{no:22,name:"김태환"},{no:23,name:"양도윤"},{no:24,name:"이승현"},{no:25,name:"이은찬"},{no:26,name:"이재예"},{no:27,name:"이풍윤"},{no:28,name:"정민규"},{no:29,name:"정하람"},{no:30,name:"최지환"}],
   "1-8반":  [{no:1,name:"김서연"},{no:2,name:"김서윤"},{no:3,name:"김주희"},{no:4,name:"김혜리"},{no:5,name:"김혜원"},{no:6,name:"박주연"},{no:7,name:"손연재"},{no:8,name:"신다혜"},{no:9,name:"신지현"},{no:10,name:"이혜율"},{no:11,name:"정하율"},{no:12,name:"젠혜림"},{no:13,name:"조다빈"},{no:14,name:"조수아"},{no:15,name:"최지유"},{no:16,name:"강도훈"},{no:17,name:"강민기"},{no:18,name:"김단우"},{no:19,name:"김재성"},{no:20,name:"노한결"},{no:21,name:"오정윤"},{no:22,name:"이강우"},{no:23,name:"이규현"},{no:24,name:"이수하"},{no:25,name:"이원재"},{no:26,name:"이정빈"},{no:27,name:"이주원"},{no:28,name:"이진호"},{no:29,name:"장수찬"},{no:30,name:"홍태호"}],
   "1-9반":  [{no:1,name:"이유진(BURTEUJINYESUI)"},{no:2,name:"김루빈"},{no:3,name:"김세림"},{no:4,name:"김지아"},{no:5,name:"김태이"},{no:6,name:"김하람"},{no:7,name:"심주하"},{no:8,name:"윤효린"},{no:9,name:"이수빈"},{no:10,name:"이아린"},{no:11,name:"이윤솔"},{no:12,name:"이채영"},{no:13,name:"정보현"},{no:14,name:"황예슬"},{no:15,name:"황지유"},{no:16,name:"김원혁"},{no:17,name:"김은성"},{no:18,name:"김태혁"},{no:19,name:"김환"},{no:20,name:"류강후"},{no:21,name:"류재민"},{no:22,name:"서준휘"},{no:23,name:"선예준"},{no:24,name:"안건우"},{no:25,name:"윤용한"},{no:26,name:"이찬율"},{no:27,name:"이홍강"},{no:28,name:"임지환"},{no:29,name:"정시훈"},{no:30,name:"조현규"}],
   "1-10반": [{no:1,name:"크리스티나(TSOY CHRISTINA)"},{no:2,name:"김담희"},{no:3,name:"김연비"},{no:4,name:"김지우"},{no:5,name:"김지유"},{no:6,name:"배온유"},{no:7,name:"성윤진"},{no:8,name:"심유하"},{no:9,name:"안영서"},{no:10,name:"엄다윤"},{no:11,name:"오지연"},{no:12,name:"유지민"},{no:13,name:"최은솔"},{no:14,name:"추다희"},{no:15,name:"권준혁"},{no:16,name:"김도훈"},{no:17,name:"김태영"},{no:18,name:"나하람"},{no:19,name:"박주원"},{no:20,name:"박준현"},{no:21,name:"손시현"},{no:22,name:"신지호"},{no:23,name:"이상진"},{no:24,name:"이시운"},{no:25,name:"이주헌"},{no:26,name:"이지환"},{no:27,name:"장무빈"},{no:28,name:"최규원"},{no:29,name:"최종원"},{no:30,name:"추민후"}],
+};
+
+
+const FAMILY_CATS = {
+  "인서": [
+    {key:"초등학교", color:"#BFDBFE", icon:"🏫"},
+    {key:"태권도",   color:"#FEF08A", icon:"🥋"},
+    {key:"축구",     color:"#BBF7D0", icon:"⚽"},
+    {key:"수영",     color:"#BAE6FD", icon:"🏊"},
+    {key:"교회",     color:"#DDD6FE", icon:"✝️"},
+  ],
+  "인율": [
+    {key:"유치원",   color:"#FBCFE8", icon:"🌸"},
+    {key:"교회",     color:"#DDD6FE", icon:"✝️"},
+  ],
+  "인우": [
+    {key:"유치원",   color:"#FBCFE8", icon:"🌸"},
+    {key:"교회",     color:"#DDD6FE", icon:"✝️"},
+  ],
 };
 
 const PRESET = [
@@ -473,8 +492,26 @@ export default function Calendar() {
   const [stdTab, setStdTab] = useState("1-1반");
   const [stdSearch, setStdSearch] = useState("");
   const [stdDetailKey, setStdDetailKey] = useState(null);
+  // ── My Planner (family) ──
+  const [familyEvents, setFamilyEvents] = useState([]);
+  const [familyCustomCats, setFamilyCustomCats] = useState({"인서":[],"인율":[],"인우":[]});
+  const [familyChild, setFamilyChild] = useState("인서");
+  const [familyView, setFamilyView] = useState("month"); // "month" | "week"
+  const [familyModal, setFamilyModal] = useState(null);
+  const [familyForm, setFamilyForm] = useState({title:"",cat:"",startTime:"",endTime:"",repeat:"none"});
+  const [newFamCatName, setNewFamCatName] = useState("");
+  const [newFamCatColor, setNewFamCatColor] = useState("#F9D4AA");
+  const [famYear, setFamYear] = useState(today.getFullYear());
+  const [famMonth, setFamMonth] = useState(today.getMonth());
+  const [famWeekOffset, setFamWeekOffset] = useState(0);
   const [ttRegRange, setTtRegRange] = useState({start:"2026-03-03", end:"2026-07-17"});
   const [ttSkipDates, setTtSkipDates] = useState("2026-03-02,2026-04-27,2026-04-28,2026-04-29,2026-05-01,2026-05-04,2026-05-05,2026-05-06,2026-05-25,2026-06-03,2026-06-29,2026-06-30,2026-07-03,2026-07-17,2026-08-15,2026-08-17,2026-09-24,2026-09-25,2026-09-28,2026-10-03,2026-10-05,2026-10-09,2026-10-21,2026-10-22,2026-10-23,2026-11-19,2026-11-20,2026-12-07,2026-12-08,2026-12-09,2026-12-25,2026-12-30");
+  // 2학기 시간표
+  const [timetable2, setTimetable2] = useState([]);
+  const [editingCell2, setEditingCell2] = useState(null);
+  const [bulkMsg2, setBulkMsg2] = useState("");
+  const [ttRegRange2, setTtRegRange2] = useState({start:"2026-08-03", end:"2026-12-30"});
+  const [ttSkipDates2, setTtSkipDates2] = useState("2026-08-15,2026-08-17,2026-09-24,2026-09-25,2026-09-28,2026-10-03,2026-10-05,2026-10-09,2026-10-21,2026-10-22,2026-10-23,2026-11-19,2026-11-20,2026-12-07,2026-12-08,2026-12-09,2026-12-25,2026-12-30");
 
   useEffect(()=>{
     (async()=>{
@@ -490,17 +527,20 @@ export default function Calendar() {
         if (data.customCats&&data.customCats.length)   setCustomCats(data.customCats);
         if (data.docs&&data.docs.length)               setDocs(data.docs);
         if (data.timetable&&data.timetable.length)     setTimetable(data.timetable);
+        if (data.timetable2&&data.timetable2.length)    setTimetable2(data.timetable2);
         if (data.studentNotes)                          setStudentNotes(data.studentNotes);
+        if (data.familyEvents)                          setFamilyEvents(data.familyEvents);
+        if (data.familyCustomCats)                      setFamilyCustomCats(data.familyCustomCats);
         setSyncStatus("ok");
         setLastSynced(new Date().toLocaleTimeString("ko-KR"));
       } catch { setSyncStatus("idle"); }
     })();
   },[]);
 
-  const saveAll = async (newE=events,newT=todos,newM=memos,newR=roomRanges,newB=banners,newCC=customCats,newD=docs,newTT=timetable,newSN=studentNotes)=>{
+  const saveAll = async (newE=events,newT=todos,newM=memos,newR=roomRanges,newB=banners,newCC=customCats,newD=docs,newTT=timetable,newTT2=timetable2,newSN=studentNotes,newFE=familyEvents,newFCC=familyCustomCats)=>{
     setSyncStatus("syncing");
     try {
-      await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({events:newE,todos:newT,memos:newM,roomRanges:newR,banners:newB,customCats:newCC,docs:newD,timetable:newTT,studentNotes:newSN})});
+      await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({events:newE,todos:newT,memos:newM,roomRanges:newR,banners:newB,customCats:newCC,docs:newD,timetable:newTT,timetable2:newTT2,studentNotes:newSN,familyEvents:newFE,familyCustomCats:newFCC})});
       setSyncStatus("ok");
       setLastSynced(new Date().toLocaleTimeString("ko-KR"));
     } catch { setSyncStatus("error"); }
@@ -569,7 +609,7 @@ export default function Calendar() {
     .filter(e=>listFilter==="전체"||e.category===listFilter)
     .sort((a,b)=>a.date.localeCompare(b.date));
 
-  const TABS = [{key:"calendar",label:"📅 캘린더"},{key:"list",label:"📋 전체보기"},{key:"todo",label:"✅ 할 일"},{key:"memo",label:"📝 메모"},{key:"docs",label:"📂 자료"},{key:"timetable",label:"🗓 시간표"},{key:"students",label:"👥 학생"}];
+  const TABS = [{key:"calendar",label:"📅 캘린더"},{key:"list",label:"📋 전체보기"},{key:"todo",label:"✅ 할 일"},{key:"memo",label:"📝 메모"},{key:"docs",label:"📂 자료"},{key:"timetable",label:"🗓 시간표(1학기)"},{key:"timetable2",label:"🗓 시간표(2학기)"},{key:"students",label:"👥 학생"},{key:"family",label:"🌿 My Planner"}];
 
   return (
     <div style={{minHeight:"100vh",background:"#FDFCF8",fontFamily:"'Noto Serif KR','Apple SD Gothic Neo',serif"}}>
@@ -1082,6 +1122,201 @@ export default function Calendar() {
       })()}
 
 
+      {tab==="timetable2" && (() => {
+        const DOW_KO = ["월","화","수","목","금"];
+        const PERIODS = ["1교시","2교시","3교시","4교시","5교시","6교시","7교시"];
+        const PERIOD_TIMES = {"1교시":["09:00","09:45"],"2교시":["09:55","10:40"],"3교시":["10:50","11:35"],"4교시":["11:45","12:30"],"5교시":["13:30","14:15"],"6교시":["14:25","15:10"],"7교시":["15:10","15:55"]};
+
+        const handlePeriodChange = (p, cell) => {
+          const times = PERIOD_TIMES[p] || [cell.startTime, cell.endTime];
+          setEditingCell2(c => ({...c, period:p, startTime:times[0], endTime:times[1]}));
+        };
+
+        const saveCell = () => {
+          if(editingCell2.isNew) {
+            const nc = {...editingCell2, id:"tt"+Date.now()};
+            delete nc.isNew;
+            const updated = [...timetable2, nc];
+            setTimetable2(updated);
+            saveAll(events,todos,memos,roomRanges,banners,customCats,docs,timetable,updated);
+          } else {
+            const updated = timetable2.map(t => t.id===editingCell2.id ? editingCell : t);
+            setTimetable2(updated);
+            saveAll(events,todos,memos,roomRanges,banners,customCats,docs,timetable,updated);
+          }
+          setEditingCell2(null);
+        };
+
+        const deleteCell = (id) => {
+          const updated = timetable2.filter(t => t.id !== id);
+          setTimetable2(updated);
+          saveAll(events,todos,memos,roomRanges,banners,customCats,docs,timetable,updated);
+        };
+
+        const parseLocalDate = (s) => {
+          const [y,m,d] = s.split('-').map(Number);
+          return new Date(y, m-1, d); // local timezone
+        };
+        const fmtLocal = (d) =>
+          `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+
+        const bulkRegister = () => {
+          const skipSet = new Set(ttSkipDates2.split(",").map(s=>s.trim()).filter(Boolean));
+          const newEvs = [];
+          const startD = parseLocalDate(ttRegRange2.start);
+          const endD   = parseLocalDate(ttRegRange2.end);
+          const cur = new Date(startD);
+          while(cur <= endD) {
+            const jsDay = cur.getDay(); // 0=Sun,1=Mon...6=Sat
+            const dow = jsDay - 1;      // 0=Mon...4=Fri, -1=Sun, 5=Sat
+            const ds = fmtLocal(cur);
+            if(dow >= 0 && dow <= 4 && !skipSet.has(ds)) {
+              timetable2.filter(t => Number(t.dow) === dow).forEach(t => {
+                const exists = events.some(e =>
+                  e.date===ds && e.className===t.className &&
+                  e.period===t.period && e.category==="수업"
+                );
+                if(!exists) {
+                  newEvs.push({
+                    id: Date.now() + Math.floor(Math.random()*100000),
+                    date: ds, title:"음악 수업", category:"수업",
+                    period: t.period, className: t.className, room:"음악실",
+                    subOption:"", subOptionEtc:"",
+                    startTime: t.startTime, endTime: t.endTime
+                  });
+                }
+              });
+            }
+            cur.setDate(cur.getDate() + 1);
+          }
+          if(newEvs.length === 0) {
+            setBulkMsg2("등록할 수업이 없어요. (이미 등록됐거나 기간 내 시간표가 비어있어요)");
+            return;
+          }
+          const merged = [...events, ...newEvs];
+          setEvents(merged);
+          saveAll(merged);
+          setBulkMsg2(`✅ ${newEvs.length}개 수업이 달력에 등록됐어요!`);
+          setTimeout(()=>setBulkMsg2(""), 4000);
+        };
+
+        const bulkDelete = () => {
+          if(!window.confirm("이 기간의 [수업] 일정을 모두 삭제합니다. 계속하시겠어요?")) return;
+          const startD = parseLocalDate(ttRegRange2.start);
+          const endD   = parseLocalDate(ttRegRange2.end);
+          const filtered = events.filter(e => {
+            if(e.category !== "수업") return true;
+            const ed = parseLocalDate(e.date);
+            return !(ed >= startD && ed <= endD);
+          });
+          setEvents(filtered);
+          saveAll(filtered);
+          setBulkMsg2("🗑 기간 내 수업이 삭제됐어요.");
+          setTimeout(()=>setBulkMsg2(""), 3000);
+        };
+
+        return (
+          <div style={{padding:16,maxWidth:700,margin:"0 auto"}}>
+            {/* 그리드 */}
+            <div style={{background:"#F5F2EA",borderRadius:12,padding:12,marginBottom:16,overflowX:"auto"}}>
+              <div style={{display:"grid",gridTemplateColumns:"68px repeat(5,1fr)",gap:4,minWidth:380}}>
+                <div style={{background:"#3D3530",color:"#FFF",borderRadius:6,padding:"6px 4px",textAlign:"center",fontSize:12,fontWeight:700}}>교시</div>
+                {DOW_KO.map(d=>(
+                  <div key={d} style={{background:"#3D3530",color:"#FFF",borderRadius:6,padding:"6px 4px",textAlign:"center",fontSize:12,fontWeight:700}}>{d}요일</div>
+                ))}
+                {PERIODS.map(p=>(
+                  <>
+                    <div key={p+"label"} style={{background:"#FFF",borderRadius:6,padding:"6px 4px",textAlign:"center",fontSize:11,fontWeight:700,color:"#3D3530",alignSelf:"center"}}>
+                      <div>{p}</div>
+                      <div style={{fontSize:10,color:"#aaa",fontWeight:400}}>{PERIOD_TIMES[p]?.[0]||""}</div>
+                    </div>
+                    {[0,1,2,3,4].map(dow=>{
+                      const cell = timetable2.find(t=>t.dow===dow&&t.period===p);
+                      return (
+                        <div key={dow+p} onClick={()=>setEditingCell2(cell||{dow,period:p,className:"",room:"음악실",startTime:PERIOD_TIMES[p]?.[0]||"",endTime:PERIOD_TIMES[p]?.[1]||"",isNew:true})}
+                          style={{background:cell?"#BFDBFE":"#FFF",border:cell?"2px solid #93C5FD":"2px dashed #EAE6DE",borderRadius:6,padding:"6px 4px",textAlign:"center",cursor:"pointer",minHeight:52,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:2}}>
+                          {cell ? <>
+                            <div style={{fontSize:12,fontWeight:700,color:"#1D4ED8"}}>{cell.className}</div>
+                            <div style={{fontSize:10,color:"#7EC8FF"}}>🎵음악실</div>
+                          </> : <div style={{fontSize:16,color:"#DDD"}}>+</div>}
+                        </div>
+                      );
+                    })}
+                  </>
+                ))}
+              </div>
+            </div>
+
+            {/* 셀 편집 모달 */}
+            {editingCell2 && (
+              <div className="mo" onClick={()=>setEditingCell2(null)}>
+                <div className="mb" onClick={e=>e.stopPropagation()} style={{maxWidth:360}}>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
+                    <h3 style={{margin:0,fontSize:16,fontWeight:700,color:"#3D3530"}}>
+                      {["월","화","수","목","금"][editingCell2.dow]}요일 {editingCell2.period} 편집
+                    </h3>
+                    <button onClick={()=>setEditingCell2(null)} style={{background:"none",border:"none",fontSize:22,cursor:"pointer",color:"#bbb"}}>×</button>
+                  </div>
+                  <div style={{marginBottom:12}}>
+                    <div className="fl">교시</div>
+                    <select className="fi fs" value={editingCell2.period} onChange={e=>handlePeriodChange(e.target.value, editingCell)}>
+                      {PERIODS.map(p=><option key={p}>{p}</option>)}
+                    </select>
+                  </div>
+                  <div style={{marginBottom:12}}>
+                    <div className="fl">반</div>
+                    <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:4,marginTop:4}}>
+                      {CLASS_LIST.map(c=>(
+                        <button key={c} onClick={()=>setEditingCell2(x=>({...x,className:c}))} style={{
+                          padding:"6px 2px",borderRadius:8,fontSize:11,fontWeight:700,
+                          border:`2px solid ${editingCell2.className===c?"#3D3530":"#DDD8CE"}`,
+                          background:editingCell2.className===c?"#3D3530":"#FFF",
+                          color:editingCell2.className===c?"#FFF":"#555",
+                          cursor:"pointer",fontFamily:"inherit"
+                        }}>{c}</button>
+                      ))}
+                    </div>
+                  </div>
+                  <div style={{marginBottom:16,display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+                    <div><div className="fl">시작</div><input className="fi" type="time" value={editingCell2.startTime} onChange={e=>setEditingCell2(x=>({...x,startTime:e.target.value}))}/></div>
+                    <div><div className="fl">종료</div><input className="fi" type="time" value={editingCell2.endTime} onChange={e=>setEditingCell2(x=>({...x,endTime:e.target.value}))}/></div>
+                  </div>
+                  <div style={{display:"flex",gap:8}}>
+                    {!editingCell2.isNew && <button onClick={()=>{deleteCell(editingCell2.id);setEditingCell2(null);}} style={{background:"#FEE2E2",color:"#DC2626",border:"none",borderRadius:8,padding:"8px 14px",cursor:"pointer",fontSize:13,fontFamily:"inherit",fontWeight:700}}>삭제</button>}
+                    <button className="bg" onClick={()=>setEditingCell2(null)}>취소</button>
+                    <button className="bp" style={{flex:1}} onClick={saveCell}>{editingCell2.isNew?"추가":"저장"}</button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* 일괄 등록 */}
+            <div style={{background:"#FFF",border:"1.5px solid #EAE6DE",borderRadius:12,padding:16,marginBottom:12}}>
+              <div style={{fontSize:13,fontWeight:700,color:"#3D3530",marginBottom:12}}>📅 달력에 일괄 등록/삭제</div>
+              <div style={{display:"flex",gap:8,marginBottom:10,flexWrap:"wrap"}}>
+                <div style={{flex:1,minWidth:120}}><div className="fl">시작일</div><input className="fi" type="date" value={ttRegRange2.start} onChange={e=>setTtRegRange2(r=>({...r,start:e.target.value}))} style={{fontSize:13}}/></div>
+                <div style={{flex:1,minWidth:120}}><div className="fl">종료일</div><input className="fi" type="date" value={ttRegRange2.end} onChange={e=>setTtRegRange2(r=>({...r,end:e.target.value}))} style={{fontSize:13}}/></div>
+              </div>
+              <div style={{marginBottom:12}}>
+                <div className="fl">제외할 날짜 (쉼표로 구분)</div>
+                <textarea className="fi" value={ttSkipDates2} onChange={e=>setTtSkipDates2(e.target.value)} style={{fontSize:12,minHeight:60,lineHeight:1.6}}/>
+              </div>
+              <div style={{display:"flex",gap:8}}>
+                <button className="bp" style={{flex:1}} onClick={bulkRegister}>📥 수업 일괄 등록</button>
+                <button onClick={bulkDelete} style={{background:"#FEE2E2",color:"#DC2626",border:"none",borderRadius:8,padding:"10px 16px",cursor:"pointer",fontSize:13,fontWeight:700,fontFamily:"inherit"}}>🗑 기간 수업 삭제</button>
+              </div>
+              {bulkMsg2 && <div style={{marginTop:10,background:bulkMsg2.startsWith("✅")?"#BBF7D0":bulkMsg2.startsWith("🗑")?"#FEE2E2":"#FEF08A",borderRadius:8,padding:"10px 14px",fontSize:13,fontWeight:700,color:"#3D3530"}}>{bulkMsg2}</div>}
+            </div>
+            <div style={{fontSize:11,color:"#aaa",lineHeight:1.7,padding:"0 4px"}}>
+              💡 셀 클릭해서 반·교시 수정 | + 클릭해서 새 수업 추가<br/>
+              💡 일괄 등록은 중복 체크 후 추가됩니다
+            </div>
+          </div>
+        );
+      })()}
+
+
+
       {tab==="students" && (() => {
         const CLASSES = Object.keys(STUDENTS);
         const noteKey = (cls, no) => `${cls}_${no}`;
@@ -1191,6 +1426,244 @@ export default function Calendar() {
               })}
               <span style={{marginRight:14}}><b style={{color:"#3D3530"}}>메모있음</b> {(STUDENTS[stdTab]||[]).filter(s=>getNote(stdTab,s.no).memo).length}명</span>
             </div>
+          </div>
+        );
+      })()}
+
+
+      {tab==="family" && (() => {
+        const CHILDREN = ["인서","인율","인우"];
+        const allCats = (child) => [...(FAMILY_CATS[child]||[]), ...(familyCustomCats[child]||[]).map(c=>({key:c.name,color:c.color,icon:"⭐"}))];
+        const getCatStyle = (child, catKey) => allCats(child).find(c=>c.key===catKey) || {color:"#EAE6DE",icon:"📌"};
+
+        // Expand recurring events for display
+        const expandEvents = (child) => {
+          const base = familyEvents.filter(e=>e.child===child);
+          const expanded = [];
+          base.forEach(ev => {
+            if(!ev.repeat || ev.repeat==="none") { expanded.push(ev); return; }
+            // weekly repeat: generate for ±6 months
+            const start = new Date(ev.date);
+            const limit = new Date(famYear, famMonth+3, 1);
+            const earliest = new Date(famYear, famMonth-3, 1);
+            let d = new Date(start);
+            let count = 0;
+            while(d <= limit && count < 200) {
+              if(d >= earliest) expanded.push({...ev, date: d.toISOString().slice(0,10), id: ev.id+"_"+d.toISOString().slice(0,10)});
+              if(ev.repeat==="weekly") d.setDate(d.getDate()+7);
+              else if(ev.repeat==="daily") d.setDate(d.getDate()+1);
+              else break;
+              count++;
+            }
+          });
+          return expanded;
+        };
+
+        // Month view helpers
+        const daysInMonth = new Date(famYear, famMonth+1, 0).getDate();
+        const firstDay = new Date(famYear, famMonth, 1).getDay();
+        const todayStr = today.toISOString().slice(0,10);
+
+        // Week view helpers
+        const getWeekDates = () => {
+          const base = new Date(today);
+          base.setDate(base.getDate() + famWeekOffset*7);
+          const dow = base.getDay();
+          const mon = new Date(base); mon.setDate(base.getDate() - (dow===0?6:dow-1));
+          return Array.from({length:7}, (_,i)=>{ const d=new Date(mon); d.setDate(mon.getDate()+i); return d.toISOString().slice(0,10); });
+        };
+        const DOW_KO = ["월","화","수","목","금","토","일"];
+        const weekDates = getWeekDates();
+
+        const openAdd = (date) => {
+          const cats = allCats(familyChild);
+          setFamilyForm({title:"", cat:cats[0]?.key||"", startTime:"09:00", endTime:"10:00", repeat:"none", date});
+          setFamilyModal({mode:"add", date});
+        };
+        const openEdit = (ev, e) => {
+          e.stopPropagation();
+          setFamilyForm({title:ev.title, cat:ev.cat, startTime:ev.startTime||"", endTime:ev.endTime||"", repeat:ev.repeat||"none", date:ev.date});
+          setFamilyModal({mode:"edit", ev});
+        };
+        const saveEvent = () => {
+          if(!familyForm.title.trim()) return;
+          let updated;
+          if(familyModal.mode==="add") {
+            const ne = {id:"fam"+Date.now(), child:familyChild, date:familyModal.date, ...familyForm};
+            updated = [...familyEvents, ne];
+          } else {
+            // edit base event (by original id without suffix)
+            const baseId = familyModal.ev.id.split("_")[0];
+            updated = familyEvents.map(e => (e.id===baseId||e.id===familyModal.ev.id) ? {...e,...familyForm,child:familyChild} : e);
+          }
+          setFamilyEvents(updated);
+          saveAll(events,todos,memos,roomRanges,banners,customCats,docs,timetable,studentNotes,updated);
+          setFamilyModal(null);
+        };
+        const deleteEvent = () => {
+          const baseId = familyModal.ev.id.split("_")[0];
+          const updated = familyEvents.filter(e => e.id!==baseId && e.id!==familyModal.ev.id);
+          setFamilyEvents(updated);
+          saveAll(events,todos,memos,roomRanges,banners,customCats,docs,timetable,studentNotes,updated);
+          setFamilyModal(null);
+        };
+        const addCustomCat = () => {
+          const nm = newFamCatName.trim();
+          if(!nm) return;
+          const updated = {...familyCustomCats, [familyChild]:[...(familyCustomCats[familyChild]||[]),{name:nm,color:newFamCatColor}]};
+          setFamilyCustomCats(updated);
+          saveAll(events,todos,memos,roomRanges,banners,customCats,docs,timetable,studentNotes,familyEvents,updated);
+          setNewFamCatName("");
+        };
+
+        const EventChip = ({ev}) => {
+          const cs = getCatStyle(familyChild, ev.cat);
+          return (
+            <div onClick={(e)=>openEdit(ev,e)} style={{background:cs.color,borderRadius:5,padding:"2px 6px",fontSize:11,fontWeight:700,marginBottom:2,cursor:"pointer",color:"#333",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+              {cs.icon} {ev.title} {ev.startTime&&<span style={{fontSize:10,opacity:0.7}}>{ev.startTime}{ev.endTime&&ev.endTime!==ev.startTime?`–${ev.endTime}`:""}</span>}
+            </div>
+          );
+        };
+
+        const childEvs = expandEvents(familyChild);
+        const evsByDate = {};
+        childEvs.forEach(ev => { if(!evsByDate[ev.date]) evsByDate[ev.date]=[]; evsByDate[ev.date].push(ev); });
+
+        return (
+          <div style={{fontFamily:"inherit"}}>
+            {/* Header */}
+            <div style={{background:"linear-gradient(135deg,#F0FDF4,#ECFDF5)",borderBottom:"1.5px solid #BBF7D0",padding:"12px 16px",display:"flex",flexWrap:"wrap",gap:10,alignItems:"center"}}>
+              <div style={{fontSize:18,fontWeight:800,color:"#166534"}}>🌿 My Planner</div>
+              {/* Child tabs */}
+              <div style={{display:"flex",gap:6,flex:1}}>
+                {CHILDREN.map(c=>(
+                  <button key={c} onClick={()=>setFamilyChild(c)} style={{padding:"6px 14px",borderRadius:20,fontSize:13,fontWeight:700,border:"none",background:familyChild===c?"#16A34A":"#FFF",color:familyChild===c?"#FFF":"#16A34A",cursor:"pointer",fontFamily:"inherit",boxShadow:"0 1px 4px rgba(0,0,0,0.08)"}}>
+                    {c==="인서"?"👦":c==="인율"?"👧":"🐥"} {c}
+                  </button>
+                ))}
+              </div>
+              {/* View toggle */}
+              <div style={{display:"flex",gap:4,background:"#FFF",borderRadius:10,padding:3,boxShadow:"0 1px 4px rgba(0,0,0,0.08)"}}>
+                {["month","week"].map(v=>(
+                  <button key={v} onClick={()=>setFamilyView(v)} style={{padding:"5px 12px",borderRadius:8,border:"none",background:familyView===v?"#16A34A":"transparent",color:familyView===v?"#FFF":"#555",fontSize:12,fontWeight:700,cursor:"pointer",fontFamily:"inherit"}}>
+                    {v==="month"?"월간":"주간"}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Category legend + add */}
+            <div style={{padding:"10px 16px",background:"#F0FDF4",borderBottom:"1px solid #BBF7D0",display:"flex",flexWrap:"wrap",gap:6,alignItems:"center"}}>
+              {allCats(familyChild).map(c=>(
+                <span key={c.key} style={{background:c.color,borderRadius:12,padding:"3px 10px",fontSize:11,fontWeight:700,color:"#333"}}>{c.icon} {c.key}</span>
+              ))}
+              <div style={{display:"flex",gap:5,marginLeft:"auto",alignItems:"center"}}>
+                <input value={newFamCatName} onChange={e=>setNewFamCatName(e.target.value)} placeholder="+ 새 카테고리" style={{border:"1.5px solid #BBF7D0",borderRadius:8,padding:"4px 10px",fontSize:12,width:110,fontFamily:"inherit",outline:"none"}} onKeyDown={e=>e.key==="Enter"&&addCustomCat()}/>
+                <input type="color" value={newFamCatColor} onChange={e=>setNewFamCatColor(e.target.value)} style={{width:30,height:30,border:"1.5px solid #BBF7D0",borderRadius:8,cursor:"pointer",padding:2}}/>
+                <button onClick={addCustomCat} style={{background:"#16A34A",color:"#FFF",border:"none",borderRadius:8,padding:"5px 10px",fontSize:12,cursor:"pointer",fontWeight:700,fontFamily:"inherit"}}>추가</button>
+              </div>
+            </div>
+
+            {/* Month view */}
+            {familyView==="month" && (
+              <div style={{padding:12}}>
+                {/* Nav */}
+                <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:12,justifyContent:"center"}}>
+                  <button onClick={()=>{ if(famMonth===0){setFamMonth(11);setFamYear(y=>y-1);}else setFamMonth(m=>m-1); }} style={{background:"#F0FDF4",border:"1.5px solid #BBF7D0",borderRadius:8,padding:"5px 12px",cursor:"pointer",fontWeight:700,color:"#16A34A",fontFamily:"inherit"}}>‹</button>
+                  <span style={{fontSize:16,fontWeight:800,color:"#166534",minWidth:100,textAlign:"center"}}>{famYear}년 {famMonth+1}월</span>
+                  <button onClick={()=>{ if(famMonth===11){setFamMonth(0);setFamYear(y=>y+1);}else setFamMonth(m=>m+1); }} style={{background:"#F0FDF4",border:"1.5px solid #BBF7D0",borderRadius:8,padding:"5px 12px",cursor:"pointer",fontWeight:700,color:"#16A34A",fontFamily:"inherit"}}>›</button>
+                </div>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(7,1fr)",gap:3}}>
+                  {["일","월","화","수","목","금","토"].map(d=>(
+                    <div key={d} style={{textAlign:"center",fontSize:11,fontWeight:700,color:d==="일"?"#EF4444":d==="토"?"#3B82F6":"#666",paddingBottom:4}}>{d}</div>
+                  ))}
+                  {Array.from({length:firstDay}).map((_,i)=><div key={"pre"+i}/>)}
+                  {Array.from({length:daysInMonth}).map((_,i)=>{
+                    const day=i+1;
+                    const ds=`${famYear}-${String(famMonth+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+                    const dayEvs=evsByDate[ds]||[];
+                    const isToday=ds===todayStr;
+                    const dow=(new Date(ds).getDay());
+                    return (
+                      <div key={day} onClick={()=>openAdd(ds)} style={{minHeight:70,background:isToday?"#DCFCE7":"#FFF",border:`1.5px solid ${isToday?"#16A34A":"#E5E7EB"}`,borderRadius:8,padding:"4px 5px",cursor:"pointer",transition:"background 0.1s"}}>
+                        <div style={{fontSize:12,fontWeight:isToday?800:500,color:dow===0?"#EF4444":dow===6?"#3B82F6":isToday?"#16A34A":"#555",marginBottom:2}}>{day}</div>
+                        {dayEvs.slice(0,3).map(ev=><EventChip key={ev.id} ev={ev}/>)}
+                        {dayEvs.length>3&&<div style={{fontSize:10,color:"#aaa"}}>+{dayEvs.length-3}</div>}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Week view */}
+            {familyView==="week" && (
+              <div style={{padding:12}}>
+                <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:12,justifyContent:"center"}}>
+                  <button onClick={()=>setFamWeekOffset(o=>o-1)} style={{background:"#F0FDF4",border:"1.5px solid #BBF7D0",borderRadius:8,padding:"5px 12px",cursor:"pointer",fontWeight:700,color:"#16A34A",fontFamily:"inherit"}}>‹</button>
+                  <span style={{fontSize:14,fontWeight:800,color:"#166534"}}>{weekDates[0].slice(5).replace("-","/")} – {weekDates[6].slice(5).replace("-","/")}</span>
+                  <button onClick={()=>setFamWeekOffset(o=>o+1)} style={{background:"#F0FDF4",border:"1.5px solid #BBF7D0",borderRadius:8,padding:"5px 12px",cursor:"pointer",fontWeight:700,color:"#16A34A",fontFamily:"inherit"}}>›</button>
+                  <button onClick={()=>setFamWeekOffset(0)} style={{background:"#16A34A",color:"#FFF",border:"none",borderRadius:8,padding:"5px 10px",fontSize:12,cursor:"pointer",fontFamily:"inherit",fontWeight:700}}>이번주</button>
+                </div>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(7,1fr)",gap:4}}>
+                  {weekDates.map((ds,i)=>{
+                    const d=new Date(ds); const dow=d.getDay(); const day=d.getDate(); const mon=d.getMonth()+1;
+                    const isToday=ds===todayStr;
+                    const dayEvs=evsByDate[ds]||[];
+                    return (
+                      <div key={ds} style={{minHeight:120}}>
+                        <div onClick={()=>openAdd(ds)} style={{textAlign:"center",padding:"6px 4px",background:isToday?"#16A34A":"#F0FDF4",borderRadius:8,marginBottom:4,cursor:"pointer"}}>
+                          <div style={{fontSize:11,color:isToday?"#FFF":dow===0?"#EF4444":dow===6?"#3B82F6":"#555",fontWeight:700}}>{DOW_KO[i]}</div>
+                          <div style={{fontSize:16,fontWeight:800,color:isToday?"#FFF":dow===0?"#EF4444":dow===6?"#3B82F6":"#166534"}}>{day}</div>
+                          <div style={{fontSize:10,color:isToday?"rgba(255,255,255,0.7)":"#aaa"}}>{mon}월</div>
+                        </div>
+                        <div style={{display:"flex",flexDirection:"column",gap:3}}>
+                          {dayEvs.map(ev=><EventChip key={ev.id} ev={ev}/>)}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Add/Edit modal */}
+            {familyModal && (
+              <div className="mo" onClick={()=>setFamilyModal(null)}>
+                <div className="mb" onClick={e=>e.stopPropagation()} style={{maxWidth:380}}>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
+                    <h3 style={{margin:0,fontSize:16,fontWeight:800,color:"#166534"}}>{familyModal.mode==="add"?"일정 추가":"일정 수정"} — {familyChild}</h3>
+                    <button onClick={()=>setFamilyModal(null)} style={{background:"none",border:"none",fontSize:22,cursor:"pointer",color:"#bbb"}}>×</button>
+                  </div>
+                  <div style={{marginBottom:10}}><div className="fl">제목</div><input className="fi" value={familyForm.title} onChange={e=>setFamilyForm(f=>({...f,title:e.target.value}))} placeholder="일정 이름" style={{fontSize:14}}/></div>
+                  <div style={{marginBottom:10}}>
+                    <div className="fl">카테고리</div>
+                    <div style={{display:"flex",flexWrap:"wrap",gap:6,marginTop:4}}>
+                      {allCats(familyChild).map(c=>(
+                        <button key={c.key} onClick={()=>setFamilyForm(f=>({...f,cat:c.key}))} style={{padding:"6px 12px",borderRadius:20,border:`2px solid ${familyForm.cat===c.key?"#16A34A":"#DDD"}`,background:familyForm.cat===c.key?c.color:"#FFF",fontSize:12,fontWeight:700,cursor:"pointer",fontFamily:"inherit",color:"#333"}}>{c.icon} {c.key}</button>
+                      ))}
+                    </div>
+                  </div>
+                  <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10,marginBottom:10}}>
+                    <div><div className="fl">시작</div><input className="fi" type="time" value={familyForm.startTime} onChange={e=>setFamilyForm(f=>({...f,startTime:e.target.value}))}/></div>
+                    <div><div className="fl">종료</div><input className="fi" type="time" value={familyForm.endTime} onChange={e=>setFamilyForm(f=>({...f,endTime:e.target.value}))}/></div>
+                  </div>
+                  <div style={{marginBottom:16}}>
+                    <div className="fl">반복</div>
+                    <div style={{display:"flex",gap:6,marginTop:4}}>
+                      {[["none","없음"],["weekly","매주"],["daily","매일"]].map(([v,l])=>(
+                        <button key={v} onClick={()=>setFamilyForm(f=>({...f,repeat:v}))} style={{flex:1,padding:"7px 4px",borderRadius:8,border:`2px solid ${familyForm.repeat===v?"#16A34A":"#DDD"}`,background:familyForm.repeat===v?"#16A34A":"#FFF",color:familyForm.repeat===v?"#FFF":"#555",fontSize:12,fontWeight:700,cursor:"pointer",fontFamily:"inherit"}}>{l}</button>
+                      ))}
+                    </div>
+                  </div>
+                  <div style={{display:"flex",gap:8}}>
+                    {familyModal.mode==="edit"&&<button onClick={deleteEvent} style={{background:"#FEE2E2",color:"#DC2626",border:"none",borderRadius:8,padding:"10px 14px",cursor:"pointer",fontSize:13,fontWeight:700,fontFamily:"inherit"}}>삭제</button>}
+                    <button className="bg" onClick={()=>setFamilyModal(null)} style={{flex:1}}>취소</button>
+                    <button onClick={saveEvent} style={{flex:2,background:"#16A34A",color:"#FFF",border:"none",borderRadius:10,padding:"10px 16px",fontSize:14,fontWeight:800,cursor:"pointer",fontFamily:"inherit"}}>{familyModal.mode==="add"?"추가":"저장"}</button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         );
       })()}
