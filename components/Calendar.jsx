@@ -356,15 +356,15 @@ const FAMILY_CATS = {
     {key:"태권도",   color:"#FEF08A", icon:"🥋"},
     {key:"축구",     color:"#BBF7D0", icon:"⚽"},
     {key:"수영",     color:"#BAE6FD", icon:"🏊"},
-    {key:"교회",     color:"#DDD6FE", icon:"✝️"},
+    {key:"교회",     color:"#DDD6FE", icon:"⛪"},
   ],
   "인율": [
     {key:"유치원",   color:"#FBCFE8", icon:"🌸"},
-    {key:"교회",     color:"#DDD6FE", icon:"✝️"},
+    {key:"교회",     color:"#DDD6FE", icon:"⛪"},
   ],
   "인우": [
     {key:"유치원",   color:"#FBCFE8", icon:"🌸"},
-    {key:"교회",     color:"#DDD6FE", icon:"✝️"},
+    {key:"교회",     color:"#DDD6FE", icon:"⛪"},
   ],
 };
 
@@ -649,6 +649,8 @@ export default function Calendar() {
             {syncStatus==="ok"&&`✅ 저장됨 ${lastSynced}`}
             {syncStatus==="error"&&<span style={{color:"#FECACA"}}>⚠️ 저장 실패</span>}
           </div>
+        </div>
+        <button onClick={async()=>{await fetch("/api/logout",{method:"POST"});window.location.href="/login";}} title="로그아웃" style={{background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",borderRadius:8,padding:"6px 12px",color:"rgba(255,255,255,0.7)",fontSize:12,cursor:"pointer",fontFamily:"inherit",flexShrink:0,marginTop:4}}>🔒 로그아웃</button>
         </div>
         <div style={{background:"#E87C3E",borderRadius:8,padding:"4px 12px",fontSize:13,fontWeight:800}}>
           📚 {month+1}월 수업일수 <span style={{fontSize:18}}>{monthlyTeachingDays}</span>일
