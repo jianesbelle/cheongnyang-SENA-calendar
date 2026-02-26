@@ -1,13 +1,7 @@
-import { serialize } from 'cookie';
-
 export default function handler(req, res) {
-  const cookie = serialize('auth_token', '', {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'strict',
-    maxAge: 0, // 즉시 만료
-    path: '/',
-  });
-  res.setHeader('Set-Cookie', cookie);
+  const secure = process.env.NODE_ENV === 'production' ? '; Secure' : '';
+  res.setHeader('Set-Cookie',
+    `auth_token=; HttpOnly; Path=/; Max-Age=0; SameSite=Strict${secure}`
+  );
   res.json({ ok: true });
 }
