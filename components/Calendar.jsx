@@ -982,7 +982,7 @@ export default function Calendar() {
         const fmtLocal = (d) =>
           `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 
-        const bulkRegister = () => {
+        const bulkRegister = async () => {
           const skipSet = new Set(ttSkipDates.split(",").map(s=>s.trim()).filter(Boolean));
           const newEvs = [];
           const startD = parseLocalDate(ttRegRange.start);
